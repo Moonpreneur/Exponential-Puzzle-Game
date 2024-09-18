@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exponential Puzzle Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="logo">
+        <img src="website-logo.png" alt="website-logo">
+    </div>
+    <div class="container" id="page1">
+        <h1>Exponential Puzzle Game</h1>
+        <button id="startGameBtn1">HOW TO PLAY</button>
+    </div>
+
+    <div class="container hidden" id="page2">
+        <h2>HOW TO PLAY</h2>
+        <p>Order the exponential values so that they increase from left to right and from top to bottom.</p>
+        <p><span style="font-size: 24px; color: #81420f;">GOOD LUCK!</span></p>
+        <button id="startGameBtn2">Start Game</button>
+    </div>
+
+    <div class="container hidden" id="page3">
+        <h2>Order the exponential values so that they increase from left to right and from top to bottom.</h2>
+        <div id="timer">Time Remaining: 180</div>
+        <div class="game-board">
+            <div class="circle-container">
+                <div class="circle" id="circle1" data-correct="value1"></div>
+                <div class="circle" id="circle2" data-correct="value2"></div>
+                <div class="circle" id="circle3" data-correct="value3"></div>
+            </div>
+            <div class="circle-container">
+                <div class="circle" id="circle4" data-correct="value4"></div>
+                <div class="circle" id="circle5" data-correct="value5"></div>
+                <div class="circle" id="circle6" data-correct="value6"></div>
+            </div>
+            <div class="circle-container">
+                <div class="circle" id="circle7" data-correct="value7"></div>
+                <div class="circle" id="circle8" data-correct="value8"></div>
+                <div class="circle" id="circle9" data-correct="value9"></div>
+            </div>
+        </div>
+        <div class="draggable-container" id="draggableContainer"></div>
+        <div id="result"></div>
+        <div id="score">Score: 0</div>
+        <button id="resetGameBtn">Reset Game</button>
+    </div>
+
+    <div class="container hidden" id="gameOverPage">
+        <h2>Game Over!</h2>
+        <p id="finalScore">Your Score: 0</p>
+        <button id="restartGameBtn">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
